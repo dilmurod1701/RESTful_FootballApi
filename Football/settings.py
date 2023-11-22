@@ -88,8 +88,11 @@ WSGI_APPLICATION = 'Football.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'football',
+        'USER': 'default',
+        'PASSWORD': 'B8U0jDSGAdCv',
+        'HOST': 'ep-lively-wildflower-54512986.us-east-2.aws.neon.tech',
     }
 }
 
